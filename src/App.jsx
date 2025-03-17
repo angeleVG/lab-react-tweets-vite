@@ -40,8 +40,8 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
-    </div>
+      <Tweet tweet={ tweetsArray[0] } /> 
+    </div> // index zero [0] refers to the first tweet from the array above //
   );
 }
 
