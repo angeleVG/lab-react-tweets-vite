@@ -40,8 +40,10 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet tweet={ tweetsArray[0] } /> 
-    </div> // index zero [0] refers to the first tweet from the array above //
+      {tweetsArray.map((tweet, index) => (
+        <Tweet key={index} tweet={tweet} />
+     ))}
+    </div>
   );
 }
 
